@@ -57,7 +57,7 @@ header h1 {
   margin: 0;
   padding: 38px 0 20px;
   width: 100%;
-  border-bottom: 3px solid #77A466;
+  border-bottom: 3px solid #77a466;
 }
 
 header h1 span {
@@ -88,6 +88,7 @@ header nav ul li a {
 }
 
 /********  MAIN STYLES ********/
+
 /******** TOP SECTION ********/
 .main-image img {
   width: 100%;
@@ -110,6 +111,7 @@ header nav ul li a {
 .bottom-section .content-wrapper {
   border-top: 5px solid #eee;
   border-bottom: 5px solid #eee;
+  margin-top: 15px;
 }
 
 .section-one,
@@ -166,4 +168,78 @@ footer span {
   text-transform: lowercase;
   color: #45610e;
   font-size: 0.875rem;
+}
+
+/******** MEDIA QUERIES ********/
+
+/******** TABLET MEDIA QUERY ********/
+@media all and (min-width: 768px) {
+  .bottom-section .content-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .section-one,
+  .section-two,
+  .section-three {
+    text-align: center;
+  }
+
+  .section-one {
+    width: 33.33%;
+  }
+
+  .section-two {
+    border-right: 5px solid #eee;
+    border-left: 5px solid #eee;
+    width: 33.33%;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .section-two p {
+    padding: 0 10px 0;
+  }
+
+  .section-three {
+    width: 33.33%;
+  }
+
+  footer {
+    margin-top: 0;
+  }
+}
+
+/******** DESKTOP MEDIA QUERY ********/
+@media all and (min-width: 1200px) {
+  body {
+    font-size: 1em;
+  }
+
+  header .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px;
+  }
+
+  header h1 {
+    width: 24%;
+    padding: 30px 0 30px;
+    border-bottom: none;
+    text-align: left;
+  }
+
+  header nav {
+    width: 21%;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
 }
